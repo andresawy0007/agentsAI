@@ -33,8 +33,8 @@ Follow these steps to set up your Python virtual environment and install the nec
 
 To run the application correctly, you need to set up your OpenAI API key. Follow these steps to add your API key to the environment:
 
-1. **Create a `add_credentials.py` File**:
-    Create a file named `add_credentials.py` and add the following code:
+1. **Add API Key to `iNode.py`**:
+    Open the file `app/Nodes/iNode.py` and add your OpenAI API key:
 
     ```python
     import os
@@ -43,11 +43,11 @@ To run the application correctly, you need to set up your OpenAI API key. Follow
 
     Replace `"your-openai-api-key"` with your actual OpenAI API key.
 
-2. **Run the Script**:
-    Execute the script to set the environment variable:
+2. **Run the Application**:
+    Execute the following command to start the application:
 
     ```sh
-    python add_credentials.py
+    python api.py
     ```
 
-This will set the `OPENAI_API_KEY` environment variable required for the application to function properly.
+This will set the `OPENAI_API_KEY` environment variable required for the application to function properly and start the application.
