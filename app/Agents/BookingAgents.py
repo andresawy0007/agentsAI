@@ -4,8 +4,8 @@ class BookingAgents:
     @staticmethod
     def getBookingInfoAgent():
         return Agent(
-            role='Booking Information Specialist',
-            goal='You will receive a booking code and a user\'s last name. Your task is to retrieve the booking information using the tools provided to you.',
+            role='Flight reservation Information Specialist',
+            goal='You will receive a booking code and a user\'s last name. Your task is to manage the changes the user is asking and respond with the new information about the booking. all the responses must be in spanish',
             backstory='An expert in retrieving booking information with extensive experience in handling various booking systems.',
             tools = [BookingTools.booking_info_tool],
             verbose=True,

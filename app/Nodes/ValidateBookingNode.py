@@ -7,11 +7,4 @@ class ValidateBookingNode(iNode):
         crewResult = bookingCrew.run();
         messages = state["messages"]
         messages.append(crewResult)
-        print(crewResult)
-
-        return
-        emailCrew = EmailCrew(email)
-        crewResult = emailCrew.run()
-        messages = state["messages"]
-        messages.append(crewResult)
         return {"messages": messages}

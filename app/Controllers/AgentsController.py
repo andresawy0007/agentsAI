@@ -50,7 +50,8 @@ class AgentsController:
         inputs = {"query": query, "messages": [query]}
         result = app.invoke(inputs)
 
-        return {"response": result["messages"][-1]}
+        return str(result['messages'][-1])
+        #return {"response": result["messages"][-1] if "messages" in result else ""}
 
 
 

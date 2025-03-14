@@ -18,3 +18,4 @@ env/
 
 # Ignorar archivos de log
 *.log
+.qodo

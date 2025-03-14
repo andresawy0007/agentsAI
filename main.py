@@ -36,23 +36,7 @@ workflow.add_edge("validateBookingNode",END)
 
 workflow.set_entry_point("entryNode")
 app = workflow.compile()
-
-query = """
-Hola. Cómo estás? Mi nombre es Andrés Guerrero y quisiera cambiar la reserva que tengo para el martes. 
-Eh. Déjame ya te muestro el número de reserva. Le estoy buscando. Listo. 
-reserva es KLPOW8 y era una reserva que tenía para este lunes, pero pues no puedo ir. Quisiera por favor que me ayudes cambiando la reserva. 
-para el siguiente martes. Muchísimas gracias. 
-"""
-
-querys = """
-Can you reply to this email
-
-Hello,
-Thank you for applying to xyz company
-can you share me your previous CTC
-Thanks,
-HR
-"""
+query = input("Please enter your query: ")
 
 print("User request:")
 print(query)

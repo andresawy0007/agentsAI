@@ -17,6 +17,8 @@ def talk_to():
     result = agentsController.run(text_value);
     # Processing can be done here with the `text_value`
     # For now, we simply return it as a response
+
+    print(result)
     return jsonify({'ai_response': result})
 
 if __name__ == '__main__':
